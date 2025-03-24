@@ -37,17 +37,59 @@
   }
 } */
 
-html, body {
-  height: 100%;
-  margin: 0;
+* {
+  box-sizing: border-box;
 }
 
-#root {
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.App {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Makes the app take full viewport height */
+  min-height: 100vh; 
+}
+
+.App-header {
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.App-content {
+  flex: 1; /* Allow it to grow and fill space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-box {
+  max-width: 800px; /* Limit the width */
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.App-footer {
+  background-color: #282c34;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* #root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
 }
 
 .content {
-  flex: 1; /* This takes the remaining space, pushing the footer down */
-}
+  flex: 1; 
+} */
+
