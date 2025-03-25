@@ -90,7 +90,9 @@ import TaskList from "./components/TaskList";
 import EditTaskForm from "./components/EditTaskForm";
 import CreateTaskForm from "./components/CreateTaskForm"
 import TaskItem from "./components/TaskItem"
-// import TaskContext from "./contexts/TaskContext";
+import ProfilePage from "./components/ProfilePage";
+//import TaskContext from "./contexts/TaskContext";
+//import AuthContext from "./contexts/AuthContext"
 
 const App = () => {
   return (
@@ -106,6 +108,7 @@ const App = () => {
           {/* Assuming EditTaskForm is used here, ensure it gets the required context */}
           <EditTaskForm />
           {/* <TaskContext /> */}
+          <ProfilePage />
           <Footer />
         </Router>
       </Container>
