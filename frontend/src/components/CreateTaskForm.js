@@ -76,7 +76,12 @@ const CreateTaskForm = () => {
           required
         >
           <option value="">Select Category</option>
-          {/* Populate categories dynamically */}
+          <option value="production">Production</option>
+          <option value="marketing">Marketing</option>
+          <option value="utilities">Utilities</option>
+          <option value="transport">Transport</option>
+          <option value="sales">Sales</option>
+          <option value="security">Security</option>
         </select>
         <button type="submit">Submit</button>
       </form>
