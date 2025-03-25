@@ -80,7 +80,7 @@
 import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { TaskProvider } from "./contexts/TaskContext";
+import TaskContext, { TaskProvider } from "./contexts/TaskContext";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { Container } from "react-bootstrap";
@@ -90,6 +90,7 @@ import TaskList from "./components/TaskList";
 import EditTaskForm from "./components/EditTaskForm";
 import CreateTaskForm from "./components/CreateTaskForm"
 import TaskItem from "./components/TaskItem"
+// import TaskContext from "./contexts/TaskContext";
 
 const App = () => {
   return (
@@ -104,6 +105,7 @@ const App = () => {
           <CreateTaskForm />
           {/* Assuming EditTaskForm is used here, ensure it gets the required context */}
           <EditTaskForm />
+          {/* <TaskContext /> */}
           <Footer />
         </Router>
       </Container>
