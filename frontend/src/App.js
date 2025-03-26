@@ -91,8 +91,14 @@ import EditTaskForm from "./components/EditTaskForm";
 import CreateTaskForm from "./components/CreateTaskForm"
 import TaskItem from "./components/TaskItem"
 import ProfilePage from "./components/ProfilePage";
+import Dashboard from "./pages/Dashboard";
+import Login from "./pages/LogIn";
 //import TaskContext from "./contexts/TaskContext";
 //import AuthContext from "./contexts/AuthContext"
+
+import { AuthProvider } from "./contexts/AuthContext";
+import Register from "./pages/Register";
+
 
 const App = () => {
   return (
@@ -100,15 +106,22 @@ const App = () => {
       <Container>
         <Router>
           <Header />
-          <SearchBar />
-          <FilterPanel />
+          {/* <SearchBar />
+          <FilterPanel /> */}
           {/* <TaskItem /> */}
-          <TaskList />
-          <CreateTaskForm />
+          {/* <TaskList />
+          <CreateTaskForm /> */}
           {/* Assuming EditTaskForm is used here, ensure it gets the required context */}
-          <EditTaskForm />
+          {/* <EditTaskForm /> */}
           {/* <TaskContext /> */}
-          <ProfilePage />
+          {/* <Dashboard /> */}
+          {/* <Login /> */}
+          <AuthProvider> 
+            <Login />
+            <Register />
+            <ProfilePage/>
+          </AuthProvider>
+          <useFetch />
           <Footer />
         </Router>
       </Container>
